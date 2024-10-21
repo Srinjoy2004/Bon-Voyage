@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+/* // $blue: #29d9d5;
+// $black:#111;
+// $light-color:rgba(14,13,13);
+// $black-bg: rgba(17,17,17,.7);
+// $white:#FFF;
+// $bg-color:#222;
+// $border: .2rem solid $blue; */
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    
+    /* &::-webkit-scrollbar{
+        width: 1rem;
+
+    }
+    &::-webkit-scrollbar-track{
+        background: #111;
+
+    }
+    &::-webkit-scrollbar-thumb{
+        background: #29d9d5;
+
+    } */
+}
+body{
+    background: #111;
+    overflow-x: hidden;
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem 9%;
+
+    
+}
+.logo{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+
+}
+.header .navbar a{
+    font-size: 20px;
+    color: #aaa ;
+    display: inline-block;
+    margin: 0 23px;
+}
+.navbar a:hover{
+    color: #29d9d5;
+}
+.loc
+{
+    margin-top: 16px;
+    display: inline;
+    padding: 16px 48px;
+    font-size: 3000px;
+    color: #29d9d5;
+    border:.32px solid #29d9d5 ;
+    border-radius: 80px;
+    cursor: pointer;
+    background: none;
+
+}
+.loc:hover{
+    background: #29d9d5;
+    color: #29d9d5;
+}
+#menu-btn{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.find-loc{
+    font-size: 20px;
+    color: #fff;
+    background-color: #222 ;
+
+}
+
+/* textContent{
+    font-size: 20px;
+    color: #fff;
+    background-color: #222 ;
+
+} */
+
+.status{
+    font-size: 20px;
+    color: #fff;
+    background-color: #222 ;
+
+}
+
+
+
+
+
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 40px 32px;
+    }
+}
+@media(max-width:768px){
+    #menu-btn{
+        
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%;
+        left: 0;right: 0;
+        background: #222;
+    }
+
+    a{
+        margin: 32px;
+        font-size: 32px;
+        display: block;
+    }
+    
+}
+@media(max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+/* .maindiv{
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 70%;
+    transform: translate(-50%,-50%);
+    background-image: url(https://www.fabhotels.com/blog/wp-content/uploads/2019/02/Take-a-Midnight-Heritage-Tour.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px, 2px, 10px, 5px white;
+    animation: slider 9s infinite linear;
+  }  
+  @keyframes slider{
+    0%{
+        background-image: url(https://media.istockphoto.com/id/1190475811/photo/rush-in-the-city.jpg?s=612x612&w=0&k=20&c=PKpWSnamJ8tjwCcRE1xFnc8n14Pv0u3ahDzNFuGIPa4=);
+
+    }
+    35%{background-image: url(https://c1.wallpaperflare.com/preview/605/650/402/kolkata-night-out-india-bridge.jpg);
+    }
+
+75%{
+    background-image: url(https://qph.cf2.quoracdn.net/main-qimg-c50449ebe5f2122a9db675824951cb3a-lq);
+}
+} */
+ section{
+    padding: 48px 32px;
+
+ }
+ .home{
+    margin: 0 auto;
+    margin-top: 144px;
+    width: 90%;
+    border-radius:16px;
+    background: url(https://www.fabhotels.com/blog/wp-content/uploads/2019/02/Take-a-Midnight-Heritage-Tour.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 80vh;
+    animation: slider 9s infinite linear;
+
+    }
+    @keyframes slider{ 
+         0%{
+            background-image: url(https://media.istockphoto.com/id/1190475811/photo/rush-in-the-city.jpg?s=612x612&w=0&k=20&c=PKpWSnamJ8tjwCcRE1xFnc8n14Pv0u3ahDzNFuGIPa4=);
+
+        }
+        35%{background-image: url(https://c1.wallpaperflare.com/preview/605/650/402/kolkata-night-out-india-bridge.jpg);
+        }
+
+    75%{
+        background-image: url(https://qph.cf2.quoracdn.net/main-qimg-c50449ebe5f2122a9db675824951cb3a-lq);
+    }
+    }
+    .about
+    {
+    
+        align-items: center;
+        
+        gap: 32px;
+
+    }
+ p{
+    align-items: center;
+    font-size: 30px;
+    color: #aaa;
+}
+ .box-container{
+    display: flex;
+    justify-content: space-around ;
+    
+ }
+.services .box-container .box
+    
+     
+    {
+        background: #222;
+        border-radius: 1rem;
+        padding: 3rem 2rem;
+        text-align: center;
+
+       
+    }
+
+    .services .box-container i{
+    font-size: 4rem;
+    color: blueviolet;
+    margin-bottom: 1rem;
+}
+
+.services .box-container h3{
+    font-size: 2rem;
+    color: rgb(253, 248, 242);
+}
+.box{
+    width: fit-content;
+}
+
+
+
+
